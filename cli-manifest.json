@@ -7182,6 +7182,47 @@
     "sourceFile": "crates/search.js"
   },
   {
+    "site": "csdn",
+    "name": "draft",
+    "description": "Create and verify an unpublished CSDN Markdown draft",
+    "access": "write",
+    "example": "opencli csdn draft --title \"How I solved a problem\" --file ./fix.md",
+    "domain": "editor.csdn.net",
+    "strategy": "ui",
+    "browser": true,
+    "args": [
+      {
+        "name": "content",
+        "type": "str",
+        "required": false,
+        "positional": true,
+        "help": "Markdown text (instead of --file)"
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": true,
+        "help": "Article title (5–100 characters)"
+      },
+      {
+        "name": "file",
+        "type": "string",
+        "required": false,
+        "help": "Local UTF-8 Markdown path (instead of content)"
+      }
+    ],
+    "columns": [
+      "status",
+      "draft_id",
+      "title",
+      "edit_url"
+    ],
+    "type": "js",
+    "modulePath": "csdn/draft.js",
+    "sourceFile": "csdn/draft.js",
+    "navigateBefore": true
+  },
+  {
     "site": "ctrip",
     "name": "attraction",
     "description": "列出携程某城市的热门景点（评分/点评数，城市 id 经 ctrip search 获取）",

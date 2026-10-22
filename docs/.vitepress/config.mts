@@ -57,6 +57,7 @@ export default defineConfig({
                 { text: 'Tieba', link: '/adapters/browser/tieba' },
                 { text: 'Bilibili', link: '/adapters/browser/bilibili' },
                 { text: 'Zhihu', link: '/adapters/browser/zhihu' },
+                { text: 'CSDN', link: '/adapters/browser/csdn' },
                 { text: 'Xiaohongshu', link: '/adapters/browser/xiaohongshu' },
                 { text: 'Rednote', link: '/adapters/browser/rednote' },
                 { text: 'WeChat Channels (视频号)', link: '/adapters/browser/wechat-channels' },
