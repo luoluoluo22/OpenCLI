@@ -6426,6 +6426,47 @@
     "siteSession": "persistent"
   },
   {
+    "site": "cnblogs",
+    "name": "draft",
+    "description": "Save a Markdown post as an unpublished CNBlogs draft",
+    "access": "write",
+    "example": "opencli cnblogs draft --title \"Post title\" --file ./post.md",
+    "domain": "i.cnblogs.com",
+    "strategy": "ui",
+    "browser": true,
+    "args": [
+      {
+        "name": "content",
+        "type": "str",
+        "required": false,
+        "positional": true,
+        "help": "Markdown body, instead of --file"
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "required": true,
+        "help": "Draft title"
+      },
+      {
+        "name": "file",
+        "type": "string",
+        "required": false,
+        "help": "UTF-8 Markdown file, instead of content"
+      }
+    ],
+    "columns": [
+      "status",
+      "draft_id",
+      "title",
+      "edit_url"
+    ],
+    "type": "js",
+    "modulePath": "cnblogs/draft.js",
+    "sourceFile": "cnblogs/draft.js",
+    "navigateBefore": true
+  },
+  {
     "site": "cnki",
     "name": "search",
     "description": "中国知网论文搜索（海外版）",
